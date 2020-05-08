@@ -1,13 +1,12 @@
-n=int(intput("\n Enter the range"))
-i=0
+n=int(input("\n Enter the value of 'n': "))
 a=0
 b=1
-while(i<n):
-if(i<=1):
-c=i
-else:
-c=a+b
-a=b
-b=c
-print(c)
-i=i+1
+sum=0
+count=1
+print("fibonacci series: ",end=" ")
+while(count<=n):
+ print(sum, end=" ")
+ count += 1
+ a=b
+ b=sum
+ sum=a+b
