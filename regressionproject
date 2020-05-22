@@ -1,0 +1,6 @@
+boston = load_boston()
+print(boston.DESCR)
+dataset = boston.data
+for name, index in enumerate(boston.feature_names):
+    print(index, name)
+                                v
